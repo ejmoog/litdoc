@@ -1,0 +1,42 @@
+/* default font size */
+body {
+	font-size: 17px;
+}
+
+/* display last posting at mobile */
+@media (max-width: 550px) {
+	ul.topiclist.forums dd.lastpost {
+		width: 45%;
+		float: right;
+		display: block;
+	}
+	ul.topiclist.forums dd.topics,
+	ul.topiclist.forums dd.posts {
+		display: none;
+	}
+
+}
+@media (max-width: 700px) {
+	.forumbg ul.topiclist dd.lastpost,
+	ul.topiclist dd.topics ,
+	ul.topiclist dd.views ,
+	ul.topiclist dd.posts {
+		display: none;
+	}
+	ul.topiclist dd.lastpost {
+		display: block;
+		background: rgba(225, 184, 144, 0.5);
+	}
+}
+
+/* add solid line at left of blockquote */
+blockquote {
+	background-color: #EBEADD;
+	border-color:#DBDBCE;
+	border-left: 5px solid #7373b7;
+}
+
+/* the dropdown menu is too thin */
+ .dropdown .dropdown-contents {
+	 min-width: 160px;
+}
