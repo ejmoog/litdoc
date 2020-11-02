@@ -1,10 +1,10 @@
-# phpbb swiper
+# phpbb spoiler
 
 ## Installation
 
-Copy the extension to phpBB/ext/ejpoox/swiper
+Copy the extension to phpBB/ext/ejpoox/spoiler
 
-Go to "ACP" > "Customise" > "Extensions" and enable the "phpbb swiper" extension.
+Go to "ACP" > "Customise" > "Extensions" and enable the "phpbb spoiler" extension.
 
 And then add the bbcode [spoiler]:
 
