@@ -17,12 +17,12 @@ function stick_spoiler(scroll_pos) {
 			//set button position fixed when get in
 			skpre.style.position = "fixed";
 			//change marginTop when skpre is fixed
-			sk.style.marginTop = (skpre.offsetHeight + 3).toString() + 'px';
+			// sk.style.marginTop = (skpre.offsetHeight + 3).toString() + 'px';
 		} else {
 			//set button position relative when get in
-			skpre.style.position = "relative";
+			skpre.style.position = "absolute";
 			//change marginTop when skpre is restore
-			sk.style.marginTop = '3px';
+			// sk.style.marginTop = '3px';
 		}
 	}
 }
