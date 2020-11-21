@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "ejsoon svg extension",
     "homepage": "http://ejsoon.win/ejpoox",
-    "version": "1.0.0-dev",
-    "time": "2020-10-02",
+    "version": "1.0.1-dev",
+    "time": "2020-11-21",
     "license": "GPL-2.0-only",
     "authors": [
         {
