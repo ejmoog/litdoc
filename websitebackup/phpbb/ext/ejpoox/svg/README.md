@@ -78,6 +78,7 @@ textarea {
 			})
 			// remove blank space
 			svgxml = svgxml.replace(/>[\s]*</g, '><');
+			svgxml = svgxml.replace(/ [\s]+/g, ' ');
 			// replace all gl or tl
 			svgxml = svgxml.replace(/</g, '[');
 			svgxml = svgxml.replace(/>/g, ']');
