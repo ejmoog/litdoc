@@ -1,0 +1,27 @@
+{
+    "name": "ejpoox/rescueinput",
+    "type": "phpbb-extension",
+    "description": "Rescue your last input.",
+    "homepage": "http://ejsoon.win/ejpoox/",
+    "version": "1.0.0",
+    "time": "2020-12-11",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "ejsoon",
+            "email": "ejsoon@outlook.com",
+            "homepage": "http://ejsoon.win/ejpoox/",
+            "role": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "ejsoon rescue input",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.0,<3.4.0@dev"
+        }
+    }
+}
