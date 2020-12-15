@@ -1,7 +1,12 @@
 var input_textarea_outer = document.getElementById("message-box");
 var input_textarea = document.getElementById("message");
 var input_title = document.getElementById("subject");
-var add_element = document.createElement("div");
+var add_element = document.createElement("input");
+add_element.value = 'RI';
+add_element.type = "button";
+add_element.className = "button2";
+add_element.style.marginRight = "10px";
+
 // set rescue local storage
 input_textarea.oninput = function() { set_storage(); }
 input_title.oninput = function() { set_storage(); }
@@ -12,7 +17,6 @@ function set_storage() {
 	add_element.style.background = "#8ff0e7";
 }
 // add the rescue button
-add_element.id = "rescue_btn";
 add_element.setAttribute("used", 0);
 add_element.onclick = function() {
 	// change value
@@ -34,7 +38,9 @@ add_element.onclick = function() {
 	}
 	describe_rescue();
 }
-input_textarea_outer.appendChild(add_element);
+var submit_field = document.getElementsByClassName("submit-buttons")[0];
+var leftbtn = submit_field.getElementsByTagName("input")[0];
+submit_field.insertBefore(add_element, leftbtn);
 var detial_element = document.createElement("span");
 detial_element.style.display = 'none';
 detial_element.id = "rescue_dtl";

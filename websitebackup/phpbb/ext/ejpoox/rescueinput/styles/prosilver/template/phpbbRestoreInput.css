@@ -1,22 +1,8 @@
 #message-box {
 	position: relative;
 }
-#rescue_btn {
-	background: #8ff0e7;
-	color: white;
-	display: inline-block;
-	position: absolute;
-	bottom: -24px;
-	left: 0;
-	line-height: 16px;
-	border-radius: 50%;
-	border: 5px solid #e9aaee;
-	width: 15px;
-	height: 15px;
-	cursor: pointer;
-}
 #rescue_dtl {
-	left: 36px;
+	left: 0;
 	bottom: -24px;
 	background-color: gray;
 	color: white;
