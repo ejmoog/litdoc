@@ -1,31 +1,28 @@
 // ejsoon imageid extension start -->
-var postid;
 // imgid
 var imgid = document.getElementsByClassName("imageid");
-var imgsrc;
 for (var iix = 0; iix < imgid.length; iix++) {
-	postid = imgid[iix].getAttribute("postid");
-	imgsrc = "viewtopic.php?p=" + postid;
+	var postid = imgid[iix].getAttribute("postid");
+	var imgsrc = "viewtopic.php?p=" + postid;
 	imgid[iix].src = imgsrc;
 	imgid[iix].onload = function() {
-		var sBody = this.contentWindow.document;
-		var sDiv = sBody.getElementById("p" + postid);
-		var sImg = sDiv.getElementsByTagName("img")[0];
-		sImg.setAttribute("alt", sDiv.querySelector("div.inner div.postbody h3 a").innerHTML);
+		var siBody = this.contentWindow.document;
+		var siDiv = siBody.getElementById("p" + postid);
+		var sImg = siDiv.getElementsByTagName("img")[0];
+		sImg.setAttribute("alt", siDiv.querySelector("div.inner div.postbody h3 a").innerHTML);
 		this.outerHTML = sImg.outerHTML;
 	}
 }
 // svgid
 var svgid = document.getElementsByClassName("svgid");
-var svgsrc;
 for (var isx = 0; isx < svgid.length; isx++) {
-	postid = svgid[isx].getAttribute("postid");
-	svgsrc = "viewtopic.php?p=" + postid;
+	var sPostid = svgid[isx].getAttribute("postid");
+	var svgsrc = "viewtopic.php?p=" + sPostid;
 	svgid[isx].src = svgsrc;
 	svgid[isx].onload = function() {
-		var sBody = this.contentWindow.document;
-		var sDiv = sBody.getElementById("p" + postid);
-		var sSvg = sDiv.getElementsByTagName("svg")[0];
+		var ssBody = this.contentWindow.document;
+		var ssDiv = ssBody.getElementById("p" + sPostid);
+		var sSvg = ssDiv.getElementsByTagName("svg")[0];
 		this.outerHTML = sSvg.outerHTML;
 	}
 }
