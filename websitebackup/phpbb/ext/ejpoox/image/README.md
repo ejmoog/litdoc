@@ -1,12 +1,18 @@
-# ejsoon imageid
+# ejsoon image
 
 ## Installation
 
 Copy the extension to phpBB/ext/ejpoox/
 
-Go to "ACP" > "Customise" > "Extensions" and enable the "ejsoon imageid" extension.
+Go to "ACP" > "Customise" > "Extensions" and enable the "ejsoon image" extension.
 
-Add the imgid bbcode in the ACP:
+Add 3 bbcode in the ACP: imgid, svgid, svg.
+
+
+
+
+
+
 bbcode:
 ```
 [imgid]{NUMBER}[/imgid]
@@ -14,7 +20,7 @@ bbcode:
 
 html:
 ```
-<iframe class="imageid" style="display: none;" postid="{NUMBER}"></iframe>
+<iframe class="image" style="display: none;" postid="{NUMBER}"></iframe>
 ```
 
 tips:

@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "ejsoon spoiler function",
     "homepage": "http://ejsoon.win/ejpoox",
-    "version": "1.0.1-dev",
-    "time": "2020-11-09",
+    "version": "1.0.2-dev",
+    "time": "2020-12-17",
     "license": "GPL-2.0-only",
     "authors": [
         {
