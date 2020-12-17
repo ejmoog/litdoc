@@ -17,7 +17,8 @@ function stick_spoiler(scroll_pos) {
 			//set button position fixed when get in
 			skpre.style.position = "fixed";
 			skpercent.style.display = "inline";
-			skpercent.style.left = viewportOffset.x + viewportOffset.width - skpercent.getBoundingClientRect().width + "px";
+			skpercent.style.right = (window.innerWidth - viewportOffset.x - viewportOffset.width) + "px";
+			console.log("window.innerWidth", window.innerWidth);
 			skpercent.innerHTML = Math.round(viewportOffset.top * -100 / viewportOffset.height) + "%";
 		} else {
 			//set button position relative when get in
