@@ -17,11 +17,9 @@ function stick_spoiler(scroll_pos) {
 			//set button position fixed when get in
 			skpre.style.position = "fixed";
 			// skskpercent
-
 			skpercent.style.display = "inline";
 			skpercent.style.right = (document.body.clientWidth - viewportOffset.x - viewportOffset.width) + "px";
-			var viewAlready = viewportOffset.height - viewportOffset.bottom + window.innerHeight;
-			var skpValue = (viewAlready) / viewportOffset.height;
+			var skpValue = (-viewportOffset.top + window.innerHeight) / viewportOffset.height;
 			skpValue = (skpValue > 1 ? 100 : Math.round(skpValue * 100));
 			skpercent.innerHTML = skpValue + "%";
 		} else {
