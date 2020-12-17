@@ -17,15 +17,13 @@ function stick_spoiler(scroll_pos) {
 			//set button position fixed when get in
 			skpre.style.position = "fixed";
 			// skskpercent
-			var excCH = viewportOffset.height - window.innerHeight;
-			var btmexcCH = viewportOffset.bottom - window.innerHeight;
-			if (excCH > 0) {
-				skpercent.style.display = "inline";
-				skpercent.style.right = (document.body.clientWidth - viewportOffset.x - viewportOffset.width) + "px";
-				var skpValue = (excCH - btmexcCH) / excCH;
-				skpValue = (skpValue > 1 ? 100 : Math.round(skpValue * 100));
-				skpercent.innerHTML = skpValue + "%";
-			}
+
+			skpercent.style.display = "inline";
+			skpercent.style.right = (document.body.clientWidth - viewportOffset.x - viewportOffset.width) + "px";
+			var viewAlready = viewportOffset.height - viewportOffset.bottom + window.innerHeight;
+			var skpValue = (viewAlready) / viewportOffset.height;
+			skpValue = (skpValue > 1 ? 100 : Math.round(skpValue * 100));
+			skpercent.innerHTML = skpValue + "%";
 		} else {
 			//set button position relative when get in
 			skpre.style.position = "absolute";
