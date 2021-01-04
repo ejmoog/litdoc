@@ -70,3 +70,18 @@ for (var inum = 0; inum < max_ij; inum++) {
 	cij = i_arr.indexOf(oij) > -1 ? j_arr[i_arr.indexOf(oij)] : oij;
 	span_ij[inum].innerHTML = cij;
 }
+// ijr click
+var ijr_main = document.getElementsByClassName("ijr_main");
+for (var ijx = 0; ijx < ijr_main.length; ijx++) {
+	ijr_main[ijx].onclick = function() {
+		var ijr_btm = this.parentNode.querySelector(".ijr_bottom");
+		ijr_btm.style.height = "20px";
+		ijr_btm.style.borderTop = "1px solid black";
+		setTimeout(function(){ 
+			ijr_btm.style.height = "0";
+		}, 5000);
+		setTimeout(function(){ 
+			ijr_btm.style.borderTop = "0px solid black";
+		}, 5500);
+	}
+}
