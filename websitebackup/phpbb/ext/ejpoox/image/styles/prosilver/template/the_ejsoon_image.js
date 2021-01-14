@@ -16,6 +16,7 @@ function ajximg(type, img, postid) {
 				var aacccimg = aaccc.getElementsByTagName("img");
 				if (aacccimg.length > 0) {
 					img.src = aacccimg[0].src;
+					img.classList.add("postimage");
 				}
 			} else if ('svg' == type) {
 				var aacccsvg = aaccc.getElementsByTagName("svg");
