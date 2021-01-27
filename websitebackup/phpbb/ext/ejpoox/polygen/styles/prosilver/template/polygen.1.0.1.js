@@ -14,6 +14,8 @@
 function Polygen(setting) {
 	// this is thus
 	var thus = this;
+	// polygen_root
+	var polygen_root = setting.polygen_root;
 	//*** init setting
 	// className that would be a polygen div
 	this.className = setting.el;
@@ -622,20 +624,20 @@ function Polygen(setting) {
 			+ '					</select>'
 			+ '				</div>'
 			+ '				<div id="solution_step">'
-			+ '					<button class="solution_step_start">start</button>'
-			+ '					<button class="solution_step_minus">-</button>'
+			+ '					<button type="button" class="solution_step_start">start</button>'
+			+ '					<button type="button" class="solution_step_minus">-</button>'
 			+ '					<span id="solution_step_num">0</span>'
-			+ '					<button class="solution_step_plus">+</button>'
-			+ '					<button class="solution_step_end">end</button>'
+			+ '					<button type="button" class="solution_step_plus">+</button>'
+			+ '					<button type="button" class="solution_step_end">end</button>'
 			+ '				</div>'
 			+ '			</div>'
 			+ '			<div id="solop" onhtml="no">'
 			+ '				<div class="op_solvectrl">'
 			+ '					<div class="solvectrl_top">'
-			+ '						<button add_state="0" onclick="solvectrl_add()" id="solvectrl_add">add</button>'
-			+ '						<button onclick="solvectrl_submit()" id="solvectrl_submit">submit</button>'
-			+ '						<button edit_state="0" onclick="solvectrl_edit()" id="solvectrl_edit">edit</button>'
-			+ '						<button onclick="solvectrl_delete()" id="solvectrl_delete">delete</button>'
+			+ '						<button type="button" add_state="0" onclick="solvectrl_add()" id="solvectrl_add">add</button>'
+			+ '						<button type="button" onclick="solvectrl_submit()" id="solvectrl_submit">submit</button>'
+			+ '						<button type="button" edit_state="0" onclick="solvectrl_edit()" id="solvectrl_edit">edit</button>'
+			+ '						<button type="button" onclick="solvectrl_delete()" id="solvectrl_delete">delete</button>'
 			+ '						<span id="solutiondescspan">'
 			+ '							<label for="solutiondesc">describe:</label>'
 			+ '							<input id="solutiondesc" type="input">'

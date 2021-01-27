@@ -1,10 +1,10 @@
-# phpbb polygen
+# ejsoon polygen
 
 ## Installation
 
 Copy the extension to phpBB/ext/ejpoox/polygen
 
-Go to "ACP" > "Customise" > "Extensions" and enable the "phpbb polygen" extension.
+Go to "ACP" > "Customise" > "Extensions" and enable the "ejsoon polygen" extension.
 
 And then add the bbcode [polygen]:
 
@@ -20,7 +20,7 @@ html:
 
 help:
 ```
-get the data from http://blog.ejsoon.win/polygen
+Generate the data from http://blog.ejsoon.win/polygen
 ```
 
 ## License
