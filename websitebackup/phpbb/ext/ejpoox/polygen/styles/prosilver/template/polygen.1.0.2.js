@@ -618,7 +618,7 @@ function Polygen(setting) {
 			+ '			<div class="solutionpoint_outer">'
 			+ '				<span>Solution:<span id="solve_num">0</span></span>'
 			+ '				<div class="solutionpoint_inner">'
-			+ '					<label for="solutionpoint">solution point:</label>'
+			+ '					<label for="solutionpoint">point:</label>'
 			+ '					<select id="solutionpoint" name="solutionpoint">'
 			+ '						<option value="-1" selected>not selected</option>'
 			+ '					</select>'
