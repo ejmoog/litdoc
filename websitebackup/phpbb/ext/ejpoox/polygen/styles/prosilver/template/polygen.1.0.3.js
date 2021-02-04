@@ -294,7 +294,7 @@ function Polygen(setting) {
 			// manage solution generator
 			var pointInner = '<option value="-1">not selected</option>';
 			if (0 < a_gen_data.solution.length) {
-			// if solution exit
+				// if solution exit
 				solve_num.innerHTML = a_gen_data.solution.length;
 				// opera the solutionpoint innerHTML
 				for (var solux = 0; solux < a_gen_data.solution.length; solux++) {
@@ -329,6 +329,13 @@ function Polygen(setting) {
 				} else {
 					solvectrl_edit.style.display =
 					solvectrl_delete.style.display =
+					solution_step.style.display = "none";
+				}
+			} else {
+				// if ctrl mode
+				if (parseInt(a_gen_data.solution_point) >= 0) {
+					solution_step.style.display =  "inline";
+				} else {
 					solution_step.style.display = "none";
 				}
 			}

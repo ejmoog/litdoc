@@ -234,6 +234,7 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+#solution_step>button,
 .op_generating>button {
 	border: 1px solid purple;
 	border-radius: 7px;
