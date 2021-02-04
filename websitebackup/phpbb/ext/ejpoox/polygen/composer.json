@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "ejsoon polygen",
     "homepage": "http://ejsoon.win/thx",
-    "version": "1.0.2-dev",
-    "time": "2021-01-28",
+    "version": "1.0.3-dev",
+    "time": "2021-02-04",
     "license": "GPL-2.0-only",
     "authors": [
         {
