@@ -62,6 +62,8 @@ function sli_animate(index) {
 	document.querySelector(".sli6_arrow_outer").style.display =
 		"none";
 	document.querySelector(".sli6_txt1").classList.remove('animated', 'infinite', 'swing');
+	document.querySelector(".sli6_img1").style.height = "55vh";
+	document.querySelector(".sli6_img1").style.top = "24vh";
 	// slider 7
 	document.querySelector(".sli7_title").style.display =
 	document.querySelector(".sli7_img1").style.display =
@@ -69,6 +71,8 @@ function sli_animate(index) {
 	document.querySelector(".sli7_arrow_outer").style.display =
 		"none";
 	document.querySelector(".sli7_txt1").classList.remove('animated', 'infinite', 'shake', 'slower');
+	document.querySelector(".sli7_img1").style.height = "55vh";
+	document.querySelector(".sli7_img1").style.top = "24vh";
 	// slider 8
 	document.querySelector(".sli8_title").style.display =
 	document.querySelector(".sli8_img1_outer").style.display =
