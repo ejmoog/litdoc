@@ -97,6 +97,8 @@ function sli_animate(index) {
 	document.querySelector(".sli10_arrow_outer").style.display =
 		"none";
 	document.querySelector(".sli10_txt3").classList.remove('animated', 'infinite', 'shake', 'slower');
+	document.querySelector(".sli10_img1").style.height = "55vh";
+	document.querySelector(".sli10_img1").style.top = "24vh";
 	// slider 11
 	document.querySelector(".sli11_title").style.display =
 	document.querySelector(".sli11_img1").style.display =
