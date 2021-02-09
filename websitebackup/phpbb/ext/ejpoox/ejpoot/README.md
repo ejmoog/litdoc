@@ -14,7 +14,7 @@ html:
 ```
 bbcode:
 ```
-<span class="ejpoot_root">{TEXT}</span>
+<span speed={NUMBER1} delay={NUMBER2} class="ejpoot_root">{TEXT}</span>
 ```
 
 html:
