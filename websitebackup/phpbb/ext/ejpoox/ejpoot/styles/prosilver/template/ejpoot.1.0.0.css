@@ -1,0 +1,10 @@
+.input_box {
+	background: lightblue;
+	animation: cursor_flash 1s linear infinite;
+}
+@keyframes cursor_flash {
+  0% { border-right: 2px solid green; }
+  50% { border-right: 2px solid green; }
+  51% { border-right: 2px solid transparent; }
+  100% { border-right: 2px solid transparent; }
+}

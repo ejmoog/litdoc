@@ -1,0 +1,17 @@
+{% INCLUDEJS '@ejpoox_ejpoot/ejpoot.1.0.0.js' %}
+<script>
+	new EjpootRoot({
+		el: ".ejpoot_root",
+		autoPlay: true,
+		inputBox: {
+			background: 'lightblue',
+			underLine: 'black',
+			color: 'black',
+		},
+		speed: 240,
+		restart: {
+			loop: true,
+			delay: 3600,
+		},
+	});
+</script>
