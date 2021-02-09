@@ -49,7 +49,7 @@ function read_cin() {
 				document.querySelector(".crejp_status").innerHTML = cin_n_point + " line loaded.";
 			}
 		}
-		cin_file.open("GET","/ext/ejpoot/yahooCJ.txt",true);
+		cin_file.open("GET","yahooCJ.txt",true);
 		cin_file.send();
 	}
 	return;
@@ -92,7 +92,6 @@ function match_cin(search_code) {
 	var start_point = 0;
 	var end_point = yahooCJ_e.length;
 	var search_point = Math.floor((start_point + end_point) / 2);
-
 	if ("" == search_code) {
 		return yahooCJ_e.length;
 	}
