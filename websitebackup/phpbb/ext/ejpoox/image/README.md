@@ -9,10 +9,6 @@ Go to "ACP" > "Customise" > "Extensions" and enable the "ejsoon image" extension
 Add 3 bbcode in the ACP: imgid, svgid, svg.
 
 
-
-
-
-
 bbcode:
 ```
 [imgid]{NUMBER}[/imgid]

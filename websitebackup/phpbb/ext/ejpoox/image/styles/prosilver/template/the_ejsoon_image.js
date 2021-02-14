@@ -1,9 +1,9 @@
 // ejsoon image extension start -->
 // html string to element
 function htmlToElems(html) {
-  let temp = document.createElement('template');
-  temp.innerHTML = html;
-  return temp.content;
+	let temp = document.createElement('template');
+	temp.innerHTML = html;
+	return temp.content;
 }
 // get image by ajax
 function ajximg(type, img, postid) {
@@ -16,7 +16,7 @@ function ajximg(type, img, postid) {
 				var aacccimg = aaccc.getElementsByTagName("img");
 				if (aacccimg.length > 0) {
 					img.src = aacccimg[0].src;
-					img.classList.add("postimage");
+					img.className = "postimage";
 				}
 			} else if ('svg' == type) {
 				var aacccsvg = aaccc.getElementsByTagName("svg");
@@ -24,6 +24,7 @@ function ajximg(type, img, postid) {
 					img.outerHTML = converSVG(aacccsvg[0].outerHTML);
 				}
 			}
+			if (typeof goswiper === 'function') goswiper();
 		}
 	}
 	xmlhttp.open("GET","viewtopic.php?p=" + postid,true);

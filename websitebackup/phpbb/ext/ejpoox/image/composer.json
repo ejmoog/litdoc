@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "ejsoon image extension",
     "homepage": "http://ejsoon.win/ejpoox",
-    "version": "1.0.0-dev",
-    "time": "2020-12-15",
+    "version": "1.0.1",
+    "time": "2021-02-14",
     "license": "GPL-2.0-only",
     "authors": [
         {
